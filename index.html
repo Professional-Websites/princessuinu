@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="zxx" class="js">
   <head>
     <meta charset="utf-8" />
@@ -24,7 +23,7 @@
   
   </head>
 
-  <body class="nk-body body-wider mode-onepage">
+  <body class="nk-body body-wider mode-onepage" style="z-index: -111111;">
     <div class="nk-wrap">
       <header class="nk-header page-header is-transparent is-sticky is-shrink is-dark" id="header">
 		    <!-- Header @s -->
@@ -54,15 +53,15 @@
                             <nav class="header-menu" id="example-menu-04">
                                 <ul class="menu menu-s2">
                                     <li class="menu-item"><a class="menu-link nav-link" href="#home">What is Princessu Inu</a></li>
-                                    <li class="menu-item"><a class="menu-link nav-link" href="#token">Tokenomics</a></li>
+                                    <li class="menu-item"><a class="menu-link nav-link" href="#newtokensale">Tokenomics</a></li>
                                     <li class="menu-item"><a class="menu-link nav-link" href="#roadmap">Roadmap</a></li>
                                    
                                     
                                     <li class="menu-item"><a class="menu-link nav-link" href="#contact">Contact</a></li>
                                 </ul>
                                 <ul class="menu-btns">
-                                    <li><a href="#" class="btn btn-rg btn-auto btn-outline btn-grad on-bg-theme btn-round"><span>BUY NOW</span></a></li>
-                                    <li><a href="#" data-toggle="modal" data-target="#login-popup" class="btn btn-rg btn-auto btn-outline btn-grad on-bg-theme btn-round"><span>CHART</span></a></li>
+                                    <li><a href="#" class="newbtn" style="padding: 5px 10px; font-size: 1rem;"><span>BUY NOW</span></a></li>
+                         
                                 </ul>
                             </nav>
                         </div><!-- .header-navbar @e -->
@@ -134,6 +133,24 @@
                   background: #cd68c7;
                   font-family: cursive;
                 }
+                #newtokensale .newbtn{
+               
+               font-size: 2rem;
+               font-weight: 100;
+               border: 3px solid #a1f0f3;
+               padding: 5px 20px;
+               border-radius: 10px;
+               background: #cd68c7;
+               font-family: cursive;
+             }
+             body{
+              z-index: -1111111111;
+             }
+             
+             #newtokensale a{
+              font-family: cursive;
+              color:#a1f0f3 ;
+             }
                 .btn2{
                
                font-size: 2rem;
@@ -163,20 +180,25 @@
                   font-family: monospace;
                   font-size: 1.25rem;
                   text-transform: capitalize;
+                   z-index: -1;
                 }
                 #about h4{
-                  letter-spacing: 1px;font-size: 3rem;text-align: center;font-family: newfont;font-weight: 100;color:#cd68c7 ;
+                  letter-spacing: 1px;font-size: 3rem;text-align: center;font-family: newfont;font-weight: 100;color:#cd68c7 ; z-index: -1;
                 }
                 #newtokensale h3{
                   font-family: monospace;
                   font-size: 1.25rem;
                   text-transform: capitalize;
+                  font-weight: 900; z-index: -1;
                 }
                 #newtokensale h4{
-                  letter-spacing: 1px;font-size: 3rem;text-align: center;font-family: newfont;font-weight: 100;color:#cd68c7 ;
+                  letter-spacing: 1px;font-size: 3rem;text-align: center;font-family: newfont;font-weight: 100;color:#cd68c7 ; z-index: -1;
+                }
+                #roadmap h4{
+                  letter-spacing: 1px;font-size: 3rem;text-align: center;font-family: newfont;font-weight: 100;color:#cd68c7 ; z-index: -1;
                 }
                 #newtokensale p{
-                  letter-spacing: 1px;font-size: 1rem;text-align: center;font-family:monospace;font-weight: 900;color:black;
+                  letter-spacing: 1px;font-size: 1.25rem;text-align: center;font-family:monospace;font-weight: 600;color:black;font-weight: bolder; z-index: -1;
                 }
                #textToCopy{
                 color: black;font-weight: 900;
@@ -188,8 +210,23 @@
                }
                #copyButton{
                 width: 300px;
-                text-align: center;
+    text-align: center;
+    background: purple;
+    color: white;
+    font-family: monospace;
 
+               }
+               .roadmap-title{
+                font-size: 1rem;
+                font-family: monospace;
+               }
+               #newtokensale h3 span{
+                font-weight: 100;
+
+               }
+             
+               .dappbtn small{
+font-size: 0.85rem;
                }
               </style>
               <!-- .nk-banner -->
@@ -267,6 +304,7 @@
                   <button id="copyButton">Copy Contract Address</button> <span id="copyResult"></span>
                   
                 </div>
+                
                  <br><br><br>
 
                  
@@ -278,6 +316,13 @@
              
               <!-- .row -->
             </div>
+            <div class="cpn-btns" style="display: flex;flex-direction: column;align-items: center;justify-content: center;">
+              <ul class="btn-grp">
+                  <li><a href="#" class="newbtn dappbtn">Launch Dapp <small>(Coming Soon)</small> </a></li>
+           
+                
+              </ul>
+          </div>
             
           </div>
         </div>
@@ -285,6 +330,8 @@
         <!-- .section-tokensale -->
  
       </section>
+
+       <hr> 
       <section id="newtokensale">
         <div class="container">
 
@@ -305,21 +352,21 @@
           TokenomIcs
         </h4>
      <p class="animated" data-animate="fadeInUp"
-     data-delay=".1" >
+     data-delay=".1" style="font-weight: 900;">
       Tax will be used to the Bridge Fund that work in the mixer ticket’s withdraw chain after Router to speed up (check White Paper) <br>
   
       ⚠️ First block after Uni will be at 99%fee to avoid the snipe bots, and not hurt the chart. 
      </p>
           <h3 style="text-align: center;text-transform: uppercase;">
-           TOKEN SUPPLY : 10B
-           <br>
+         <span> •TOKEN SUPPLY : </span> 10B
+           <br>    <span> •LIQUIDITY </span> 98.5%  <br>   <span>•Marketing </span> 1.5% <br>
            
-           LIQUIDITY LOCK ON TEAM FINANCE <br>
-           Fair Launch. <br>
-             No Presale. <br> No Team Tokens <br>
-           98.5% Liq - 1.5% Marketing <br>
-           Renounced <br>
-           Burn method in the UI
+         <span>  •LIQUIDITY LOCK ON TEAM FINANCE </span> <br>
+         <span>  •Fair Launch </span> <br>
+         <span>   • No Presale </span> <br><span>• No Team Tokens </span> <br>
+       
+          <span> •Renounced </span> <br>
+     
           </h3>
           <br><br><br>
 
@@ -329,7 +376,15 @@
 
 <img src="./graphics1.png" alt="">
 </div>
+<div class="cpn-btns col-lg-12" style="display: flex;flex-direction: column;align-items: center;justify-content: center;">
+  <ul class="btn-grp">
+      <li><a href="https://princessu-inu.gitbook.io/" class="newbtn dappbtn">WhitePaper </a></li>
+
+    
+  </ul>
 </div>
+</div>
+
 </div>
       </section>
    
@@ -421,11 +476,9 @@ copy.addEventListener('click', function(e) {
                      
                           <div class="roadmap-step roadmap-step-s1" >
                             <div class="roadmap-head roadmap-head-s1"  style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
-                              <img src="" width="75px" style="margin-bottom:20px ;" alt="">
-                              <span class="roadmap-time roadmap-time-s1 text-center"
-                                >Phase 1</span
-                              >
-                              <span style="font-family: 'Montserrat';font-weight: 500;letter-spacing: 1px;font-size: 1.25rem;"
+                       
+                          <img src="./phase 1.png" width="250px" alt="">
+                              <span 
                               class="roadmap-title roadmap-title-s1 text-center"
                                 ><img src="https://img.icons8.com/fluency-systems-filled/8/000000/circled-dot.png"/> Create Website & Social Media <br>
                                <img src="https://img.icons8.com/fluency-systems-filled/8/000000/circled-dot.png"/> Fair launch <br>
@@ -452,11 +505,9 @@ copy.addEventListener('click', function(e) {
                        
                           <div class="roadmap-step roadmap-step-s1" >
                             <div class="roadmap-head roadmap-head-s1"  style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
-                              <img src="" width="75px" style="margin-bottom:20px ;" alt="">
-                              <span class="roadmap-time roadmap-time-s1 text-center"
-                                >Phase 2</span
-                              >
-                              <span  style="font-family: 'Montserrat';font-weight: 500;letter-spacing: 1px;font-size: 1.25rem;white-space: nowrap;"
+     
+                              <img src="./phase 2.png" width="250px" alt="">
+                              <span 
                               class="roadmap-title roadmap-title-s1 text-center" class="roadmap-title roadmap-title-s1 text-center"
                               ><img src="https://img.icons8.com/fluency-systems-filled/8/000000/circled-dot.png"/> Coin Gecko Listing <br>
                               <img src="https://img.icons8.com/fluency-systems-filled/8/000000/circled-dot.png"/> 10M+ Marketcap Goal <br>
@@ -485,11 +536,9 @@ copy.addEventListener('click', function(e) {
                     
                           <div class="roadmap-step roadmap-step-s1">
                             <div class="roadmap-head roadmap-head-s1"  style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
-                              <img src="" width="75px" style="margin-bottom:20px ;" alt="">
-                              <span class="roadmap-time roadmap-time-s1 text-center"
-                                >Phase 3</span
-                              >
-                              <span  style="font-family: 'Montserrat';font-weight: 500;letter-spacing: 1px;font-size: 1.25rem;"
+
+                              <img src="./phase 3.png" width="250px" alt="">
+                              <span
                               class="roadmap-title roadmap-title-s1 text-center" class="roadmap-title roadmap-title-s1 text-center"
                               > <img src="https://img.icons8.com/fluency-systems-filled/8/000000/circled-dot.png"/> 100M Marketcap Goal <br>
                               <img src="https://img.icons8.com/fluency-systems-filled/8/000000/circled-dot.png"/> Massive Community Giveaways <br>
@@ -519,7 +568,7 @@ copy.addEventListener('click', function(e) {
           </div>
           <!-- .block @e -->
         </div>
-        <div class="row justify-content-between align-items-center">
+        <div class="row justify-content-between align-items-center" id="contact" >
           <div class="col-12">
             <div class="copyright-text text-center">
               <a href="./assets/images/" class="wgs-logo-s2">
@@ -548,12 +597,12 @@ copy.addEventListener('click', function(e) {
                   "
                   style="display: flex;justify-content: center;align-items: center;"
                 >
-                  <a href="twiterrrrrrrr">
+                  <a href="https://twitter.com/PrincessuInu">
                  
                     <em class="contact-icon fab fa-twitter animated"  data-animate="fadeInUp"
                     data-delay=".3" style="margin: 5px;background: transparent;font-size: 25px;box-shadow: green;"></em>
                   </a>
-                  <a href="twiterrrrrrrr">
+                  <a href="https://t.me/princessuinuportal">
                
                     <em class="contact-icon fas fa-paper-plane animated"  data-animate="fadeInUp"
                     data-delay=".3" style="margin: 5px;background: transparent;font-size: 25px;box-shadow: green;"></em>
